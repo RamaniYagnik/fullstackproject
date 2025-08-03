@@ -1,0 +1,30 @@
+const productCategory = [
+    { id: 1, label: "Watches", value: "watches" },
+    { id: 2, label: "Men", value: "men" },
+    { id: 3, label: "Women", value: "women" },
+    { id: 4, label: "BestSeller", value: "bestseller" },
+    { id: 5, label: "Sales", value: "sales" },
+    { id: 6, label: "SmartWatches", value: "smartwatches" },
+    { id: 7, label: "Xylys", value: "xylys" },
+    { id: 8, label: "Nebula", value: "nebula" },
+    { id: 9, label: "Edge", value: "edge" },
+    { id: 10, label: "Raga", value: "raga" },
+    { id: 11, label: "Coach", value: "coach" },
+    { id: 12, label: "Police", value: "police" },
+    { id: 13, label: "Tommyhilfiger", value: "tommyhilfiger" },
+    { id: 14, label: "Kenethcole", value: "kenethcole" },
+    { id: 15, label: "Anneclien", value: "anneclien" },
+    { id: 16, label: "Kids", value: "kids" },
+    { id: 17, label: "Couple", value: "couple" },
+    { id: 17, label: "Newarrival", value: "newarrival" },
+    { id: 18, label: "Luxe", value: "luxe" },
+    { id: 19, label: "Clocks", value: "clocks" },
+    { id: 20, label: "Fastrack", value: "fastrack" },
+    { id: 21, label: "Sonata", value: "sonata" },
+    { id: 22, label: "Mechanical", value: "mechanical" },
+    { id: 23, label: "Automatic", value: "automatic" },
+    { id: 24, label: "Quartz", value: "quartz" },
+    { id: 25, label: "Chronograph", value: "chronograph" }
+]
+
+export default productCategory

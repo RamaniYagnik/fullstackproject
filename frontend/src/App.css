@@ -1,0 +1,30 @@
+.userTable{
+    background-color: white;
+}
+
+.userTable th{
+    @apply border text-base font-medium
+}
+
+.userTable td{
+    @apply border text-center p-2 text-sm
+}
+
+.scrollbarnone::-webkit-scrollbar{
+    display: none;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Change color as needed */
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light background */
+  }
+  
