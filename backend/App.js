@@ -21,7 +21,11 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(
   cors({
-    origin: "*",        
+     origin: [
+      "https://fullstackproject-dun.vercel.app",          
+      "https://fullstackproject-1zg7e0ita-ramaniyagniks-projects.vercel.app", 
+      "https://fullstackproject-dun.vercel.app"          
+    ],        
     credentials: true
   })
 );
