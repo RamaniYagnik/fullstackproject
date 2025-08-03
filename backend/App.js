@@ -19,13 +19,13 @@ import wishlistRouter from './Routes/wishlistRoutes.js'
 const app = express()
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
-  origin: [
-    "https://fullstackproject-dun.vercel.app",
-    "https://fullstackproject-1zg7e0ita-ramaniyagniks-projects.vercel.app"
-  ],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: "*",        
+    credentials: true
+  })
+);
+
 
 
 app.use("/user",userSingupRouter)
