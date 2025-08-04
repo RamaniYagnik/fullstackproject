@@ -24,7 +24,9 @@ app.use(
      origin: [
       "https://fullstackproject-dun.vercel.app",          
       "https://fullstackproject-1zg7e0ita-ramaniyagniks-projects.vercel.app", 
-      "https://fullstackproject-dun.vercel.app"          
+      "https://fullstackproject-dun.vercel.app",
+      "http://localhost:3000",
+      "http://127.0.0.1:3000"         
     ],        
     credentials: true
   })

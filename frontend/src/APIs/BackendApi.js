@@ -1,4 +1,4 @@
-const backendApi = "https://fullstackproject-z983.onrender.com"
+const backendApi = process.env.REACT_APP_BACKEND_URL || "https://fullstackproject-z983.onrender.com"
 
 const Api = {
     signup: {
