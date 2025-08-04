@@ -29,7 +29,7 @@ const ProductDetails = () => {
   };
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/products/productdetails/${id}`)
+    axios.get(`https://fullstackproject-z983.onrender.com/products/productdetails/${id}`)
       .then(response => {
         setProduct(response.data);
         setMainImage(response.data.productImage[0]);

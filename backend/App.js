@@ -30,8 +30,6 @@ app.use(
   })
 );
 
-
-
 app.use("/user",userSingupRouter)
 app.use("/user",userLoginRouter)
 app.use("/userDetail",userDetailRouter)
