@@ -23,8 +23,14 @@ app.use(
   cors({
      origin: [
       "https://fullstackproject-dun.vercel.app",          
-      "https://fullstackproject-1zg7e0ita-ramaniyagniks-projects.vercel.app", 
-      "https://fullstackproject-dun.vercel.app"          
+      "https://fullstackproject-1zg7e0ita-ramaniyagniks-projects.vercel.app",
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "https://localhost:3000",
+      "https://localhost:3001",
+      // Add any other frontend URLs that might be accessing this backend
+      /^https:\/\/.*\.vercel\.app$/,
+      /^https:\/\/.*\.netlify\.app$/
     ],        
     credentials: true
   })
