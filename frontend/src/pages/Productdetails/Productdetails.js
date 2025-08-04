@@ -29,10 +29,20 @@ const ProductDetails = () => {
   };
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/products/productdetails/${id}`)
-      .then(response => {
-        setProduct(response.data);
-        setMainImage(response.data.productImage[0]);
+    fetch(Api.productDetails.url(), {
+      method: Api.productDetails.method,
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ productId: id })
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          setProduct(data.data);
+          setMainImage(data.data.productImage[0]);
+        }
       })
       .catch(error => console.error('Error fetching product:', error));
   }, [id]);
