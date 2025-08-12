@@ -20,7 +20,7 @@ const ProductDetails = () => {
   const [isWishlisted, setIsWishlisted] = useState(false);
   const navigate = useNavigate();
 
-  const { fetchAddTocart,fetchWishlist } = useContext(Context);
+  const { fetchAddTocart, fetchWishlist } = useContext(Context);
 
   const handleAddToCart = async (e, id) => {
     await Addtocart(e, id);
@@ -29,7 +29,7 @@ const ProductDetails = () => {
   };
 
   useEffect(() => {
-    axios.get(`https://fullstackproject-w312.onrender.com/products/productdetails/${id}`)
+    axios.get(`${process.env.REACT_APP_API_URL}/products/productdetails/${id}`)
       .then(response => {
         setProduct(response.data);
         setMainImage(response.data.productImage[0]);
