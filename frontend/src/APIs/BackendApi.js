@@ -1,4 +1,4 @@
-const backendApi = "https://fullstackproject-z98.onrender.com"
+const backendApi = "http://localhost:4000"
 
 const Api = {
     signup: {

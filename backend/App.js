@@ -21,17 +21,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(
   cors({
-     origin: [
-      "https://fullstackproject-dun.vercel.app",          
-      "https://fullstackproject-1zg7e0ita-ramaniyagniks-projects.vercel.app",
-      "http://localhost:3000",
-      "http://localhost:3001",
-      "https://localhost:3000",
-      "https://localhost:3001",
-      // Add any other frontend URLs that might be accessing this backend
-      /^https:\/\/.*\.vercel\.app$/,
-      /^https:\/\/.*\.netlify\.app$/
-    ],        
+     origin: [ process.env.FRONTEND_URL ],        
     credentials: true
   })
 );
